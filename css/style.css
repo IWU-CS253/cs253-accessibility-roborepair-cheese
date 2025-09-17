@@ -38,6 +38,10 @@ form {
     color: #000;
 }
 
+#links {
+    list-style-type: none;
+}
+
 input[type="submit"] {
     background-color: lightgrey;
     color: white;
