@@ -17,7 +17,7 @@ header {
 	padding: 10px 0;
 }
 h1 {
-    font-size: 3em; /* made font size larger for headings */
+    /* made font size larger for headings */
 }
 
 header a {
@@ -36,6 +36,10 @@ a {
 }
 form {
     color: #000;
+}
+
+#links {
+    list-style-type: none; /* Removed bullet points for linked pages on header */
 }
 
 input[type="submit"] {
