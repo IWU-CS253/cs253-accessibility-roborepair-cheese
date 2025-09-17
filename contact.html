@@ -10,9 +10,9 @@
 </head>
 <body>
     <header>
-	    <img src="images/banner.png" width="400px" alt="RoboCare Banner">
+	    <img src="images/banner.png" width="400px" alt="RoboCare Banner"> <!-- Added alt tag for the robobanner-->
         <nav>
-            <ul>
+            <ul id="links"> <!-- Added id to specific list to add CSS styling to remove bullet points -->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Our Catalog</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -24,10 +24,14 @@
     <p>For any questions, please fill out the form below:</p>
 
     <form>
-        Name: <input type="text" name="name"><br>
-        Email: <input type="text" name="email"><br>
-        Message: <textarea name="message"></textarea><br>
-        <input style="color: blue;" type="submit" value="Send" style="background-color: lightgrey; color: white;">
+        <label for="name">Name</label> <!--Create a label for the Name form so screen reader can read it-->
+        Name: <input type="text" id="name" name="name"><br>
+        <label for="email"></label><!--Create a label for the Email form so screen reader can read it-->
+        Email: <input type="text" id="email" name="email"><br>
+        <label for="message"></label><!--Create a label for the Message form so screen reader can read it-->
+        Message: <textarea id="message" name="message"></textarea><br>
+        <label for="send"></label><!--Create a label for the Send form so screen reader can read it-->
+        <input type="submit" id="send" value="Send" style="background-color: lightgrey; color: white;">
     </form>
 
     <div>
@@ -38,7 +42,7 @@
 
     <button onclick="document.location='index.html'">Back to Homepage</button>
     <footer>
-        <p><img src="images/unscrupulous.png" width="50px">© 2024 Unscrupulous Web Design</p>
+        <p><img src="images/unscrupulous.png" width="50px" alt="Unscrupulous Web Design Logo">© 2024 Unscrupulous Web Design</p> <!-- Added alt tag for the Unscrupulous Logo-->
     </footer>
 </body>
 </html>
