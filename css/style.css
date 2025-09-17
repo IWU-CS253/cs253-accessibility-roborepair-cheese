@@ -4,30 +4,36 @@
 
 body {
     font-family: Arial, sans-serif;
-    color: #999; /* Poor contrast */
-    background-color: #ccc;
+    color: #2D2A32; /* Increased contrast */
+    background-color: #FAFDF6;
 	border: solid 5px;
 	margin: 100px;
 }
 
 header {
 	text-align: center;
-	background-color: #333;
-	color: white;
+	background-color: #333; /* Darkened background for better contrast */
+	color: #EEEFA8; /* Increased contrast */
 	padding: 10px 0;
 }
 h1 {
-    font-size: 1em; /* Small font size for headings */
+    font-size: 3em; /* made font size larger for headings */
 }
 
+header a {
+    color: #EAE151; /* Lightned link contrast */
+}
+
+header a:hover {
+    color: #7C7A13; /* Darkened hover contrast*/
+}
 a {
-    color: #999; /* Poor link contrast */
+    color: #2DA9C8; /* Lightned link contrast */
 }
 
-a:hover {
-    color: #ccc; /* Even lower contrast on hover */
+ a:hover {
+    color: #1A6274; /* Darkened hover contrast*/
 }
-
 form {
     color: #000;
 }
@@ -40,10 +46,15 @@ input[type="submit"] {
 
 button {
     cursor: pointer;
-    font-size: 0.8em; /* Small font size */
+    font-size: 1em; 
 }
 
 /* Missing focus styles for interactive elements */
 a:focus, button:focus, input:focus {
-    /* No focus styles defined */
+    outline: 3px solid #FFA500; /* High contrast focus outline */
+    outline-offset: 2px;
+    background-color: #FFFFE0; /* Light background for better visibility */
+    color: #000; /* Dark text for better visibility */
+    font-weight: bold; /* Bold text for better visibility */
+    text-decoration: underline; /* Underline for better visibility */
 }
